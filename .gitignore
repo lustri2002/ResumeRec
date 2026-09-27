@@ -1,0 +1,19 @@
+.build/
+.DS_Store
+dist/
+*.xcodeproj/xcuserdata/
+.swiftpm/
+*.swp
+*.swo
+*.log
+*.dmg
+*.sha256
+.env
+.env.*
+*.p12
+*.p8
+# Local development notes; public documentation lives in DEVELOPMENT.md.
+docs/SPECIFICA.md
+docs/ARCHITETTURA.md
+docs/VERIFICHE.md
+docs/DISTRIBUZIONE.md

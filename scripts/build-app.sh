@@ -1,0 +1,21 @@
+#!/bin/zsh
+set -euo pipefail
+PROJECT_DIR="${0:A:h:h}"
+BUILD_DIR="${PAUSA_BUILD_DIR:-$PROJECT_DIR/.build}"
+cd "$PROJECT_DIR"
+mkdir -p "$BUILD_DIR/module-cache" "$BUILD_DIR/cache" "$BUILD_DIR/config" "$BUILD_DIR/security"
+export CLANG_MODULE_CACHE_PATH="$BUILD_DIR/module-cache"
+export SWIFT_MODULECACHE_PATH="$BUILD_DIR/module-cache"
+BUILD_OPTIONS=(--disable-sandbox --scratch-path "$BUILD_DIR" --cache-path "$BUILD_DIR/cache" --config-path "$BUILD_DIR/config" --security-path "$BUILD_DIR/security")
+swift build -c release "${BUILD_OPTIONS[@]}"
+BIN_DIR="$(swift build -c release "${BUILD_OPTIONS[@]}" --show-bin-path)"
+APP_DIR="${PAUSA_APP_DIR:-$PROJECT_DIR/dist/ResumeRec.app}"
+mkdir -p "$APP_DIR/Contents/MacOS" "$APP_DIR/Contents/Resources"
+cp "$BIN_DIR/Pausa" "$APP_DIR/Contents/MacOS/ResumeRec"
+cp "$PROJECT_DIR/Resources/Info.plist" "$APP_DIR/Contents/Info.plist"
+cp "$PROJECT_DIR/Resources/AppIcon.icns" "$APP_DIR/Contents/Resources/AppIcon.icns"
+cp "$PROJECT_DIR/Resources/MenuBarTemplate.png" "$APP_DIR/Contents/Resources/MenuBarTemplate.png"
+cp "$PROJECT_DIR/Resources/MenuBarTemplate@2x.png" "$APP_DIR/Contents/Resources/MenuBarTemplate@2x.png"
+cp "$PROJECT_DIR/LICENSE" "$APP_DIR/Contents/Resources/LICENSE.txt"
+codesign --force --sign - "$APP_DIR"
+print "App creata: $APP_DIR"

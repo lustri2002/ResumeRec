@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>ResumeRec</string>
+<key>CFBundleIdentifier</key><string>local.pausa.recorder</string>
+<key>CFBundleName</key><string>ResumeRec</string>
+<key>CFBundleDisplayName</key><string>ResumeRec</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>0.2.8</string>
+<key>CFBundleVersion</key><string>10</string>
+<key>CFBundleDevelopmentRegion</key><string>en</string>
+<key>CFBundleLocalizations</key><array><string>en</string></array>
+<key>LSMinimumSystemVersion</key><string>26.0</string>
+<key>LSUIElement</key><true/>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSCameraUseContinuityCameraDeviceType</key><true/>
+<key>NSCameraUsageDescription</key><string>ResumeRec uses your webcam for the live preview and to include you in recordings. Images stay on your Mac.</string>
+<key>NSMicrophoneUsageDescription</key><string>ResumeRec uses the selected microphone to record your voice, only when you enable it.</string>
+</dict></plist>

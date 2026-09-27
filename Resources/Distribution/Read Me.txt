@@ -1,0 +1,63 @@
+ResumeRec — Preview Beta
+
+REQUIREMENTS
+Apple Silicon Mac (M1 or newer), macOS 26 or later.
+
+INSTALL
+1. Quit any older copy of ResumeRec or Pausa. Save an active recording first.
+2. Drag ResumeRec.app onto the Applications folder shortcut.
+3. Eject this disk image, then open ResumeRec from Applications.
+4. ResumeRec lives in the menu bar. Open Settings from its menu.
+
+THIS BETA'S SIGNATURE
+This preview uses a local ad hoc signature. It is not signed with an Apple
+Developer ID and has not been notarized by Apple. macOS may block the first
+launch after a download. Only proceed if you trust the source of this copy.
+After trying to open the app, use System Settings > Privacy & Security >
+Open Anyway, if offered by macOS, and confirm that you want to open ResumeRec.
+On a managed Mac this option may be unavailable; contact your administrator.
+Apple's instructions: https://support.apple.com/en-us/102445
+
+FIRST RECORDING
+1. In Settings > Output, choose a writable folder for your recordings.
+2. In Recording, choose a display, window or region and the audio you need.
+3. In Webcam, optionally enable the camera and customize its appearance.
+4. Start Recording, then use Pause / Resume and Stop & Save from the menu bar.
+   Shortcuts are configurable in Settings > Controls.
+5. Wait for saving to finish. Your MP4 appears in the selected folder.
+
+PERMISSIONS
+Allow screen recording when macOS asks. If access is not yet available, use
+System Settings > Privacy & Security > Screen & System Audio Recording.
+Quit and reopen ResumeRec if requested by macOS. Camera and microphone access
+are requested when those features are enabled. Granting screen access does
+not automatically start a recording: return to the app and try again.
+
+GOOD TO KNOW
+- Source and device lists refresh when their dropdown opens.
+- The floating webcam preview shows the actual recording size and position.
+- Hiding the preview does not remove the webcam from the saved video.
+- Pause removes the paused time from the final video. You can change sources
+  while paused, but the recording's video dimensions remain fixed.
+- ResumeRec works offline. It has no account, telemetry or automatic updater.
+- Temporary session files are stored alongside recordings. If saving fails,
+  keep the hidden .ResumeRec-session folder and use Output > Recover a Session.
+  Session folders from earlier Pausa versions are also supported.
+
+UPDATES AND FEEDBACK
+For an update, save your recording, quit the app, and replace ResumeRec in
+Applications with the newer version. Settings are retained with this build's
+existing app identifier. Send feedback to the person who gave you this beta,
+including the app version, macOS version, Mac model, settings and steps to
+reproduce the issue. Include recording content only if you choose to share it.
+
+REMOVE
+Quit ResumeRec and move the app from Applications to the Trash.
+Your saved recordings are separate files and are not removed with the app.
+
+SOURCE AND LICENSE
+Source code: https://github.com/lustri2002/ResumeRec
+Downloads and updates: https://github.com/lustri2002/ResumeRec/releases
+Bug reports: https://github.com/lustri2002/ResumeRec/issues
+Licensed under the MIT License. See LICENSE.txt in this disk image or
+Contents/Resources/LICENSE.txt inside the app bundle.
