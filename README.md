@@ -10,16 +10,18 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.1"><img src="https://img.shields.io/badge/release-0.2.8--beta.1-2563eb" alt="Release 0.2.8-beta.1"></a>
+  <a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.2"><img src="https://img.shields.io/badge/release-0.2.8--beta.2-2563eb" alt="Release 0.2.8-beta.2"></a>
   <img src="https://img.shields.io/badge/macOS-26%2B-555555" alt="Requires macOS 26 or later">
   <img src="https://img.shields.io/badge/chip-Apple%20Silicon-555555" alt="Apple Silicon only">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-16a34a" alt="MIT license"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.1/ResumeRec-0.2.8-beta.1-arm64.dmg"><strong>Download for Mac ↓</strong></a>
+  <a href="https://lustri2002.github.io/ResumeRec/">Website</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.1">Release notes</a>
+  <a href="https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.2/ResumeRec-0.2.8-beta.2-arm64.dmg"><strong>Download for Mac ↓</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.2">Release notes</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/lustri2002/ResumeRec/issues">Report a bug</a>
 </p>
@@ -52,7 +54,7 @@ The webcam preview and its inclusion in the saved video are independent. Source 
 
 **Requires an Apple Silicon Mac (M1 or newer) running macOS 26 or later.** The current release is a public beta.
 
-1. [Download ResumeRec 0.2.8-beta.1 for Mac](https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.1/ResumeRec-0.2.8-beta.1-arm64.dmg).
+1. [Download ResumeRec 0.2.8-beta.2 for Mac](https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.2/ResumeRec-0.2.8-beta.2-arm64.dmg).
 2. Open the DMG and drag **ResumeRec** onto **Applications**.
 3. Eject the DMG and open ResumeRec from Applications.
 4. Look for the **RR** icon in the menu bar and open **Settings**.
@@ -66,10 +68,10 @@ You can also build the app from source. No paid Apple Developer membership is ne
 <details>
 <summary>Verify your download (SHA-256)</summary>
 
-Download the [checksum file](https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.1/ResumeRec-0.2.8-beta.1-arm64.dmg.sha256) into the same folder as the DMG. Open Terminal in that folder and run:
+Download the [checksum file](https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.2/ResumeRec-0.2.8-beta.2-arm64.dmg.sha256) into the same folder as the DMG. Open Terminal in that folder and run:
 
 ```sh
-shasum -a 256 -c ResumeRec-0.2.8-beta.1-arm64.dmg.sha256
+shasum -a 256 -c ResumeRec-0.2.8-beta.2-arm64.dmg.sha256
 ```
 
 The result should end in `OK`. A checksum checks file integrity; it is not a developer identity certificate.

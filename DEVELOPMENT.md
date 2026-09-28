@@ -58,6 +58,18 @@ Screen authorization is checked before source discovery. Unavailable access uses
 
 Prepared assets are included; building the app does not require an image-generation service. [Artwork notes and prompts](Resources/Brand/README.md) document the icon's origin and optional regeneration commands.
 
+## Project website
+
+The public landing page lives in `docs/index.html`, with `docs/styles.css` and assets in `docs/images`. It uses plain HTML and CSS, with no JavaScript, package dependencies or external fonts. GitHub Pages publishes the committed `/docs` directory from `main`; `.nojekyll` disables Jekyll processing. Local development notes are ignored by Git and are not published.
+
+Preview it from the repository root:
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory docs
+```
+
+Open `http://127.0.0.1:8765`. When publishing a release, update the version label, all three DMG links and the release-notes link in `docs/index.html`, plus the README release links. Confirm the assets exist on GitHub before changing links. Check mobile and desktop layouts and the first-launch instructions. Site-only changes do not require rebuilding the macOS app.
+
 ## Packaging and release
 
 ```sh
