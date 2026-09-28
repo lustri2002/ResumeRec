@@ -37,8 +37,8 @@
         <p class="eyebrow">A LITTLE APP FOR YOUR MAC</p>
         <h1 id="hero-title">Record.<br>Pause.<br><span>Resume.</span></h1>
         <p class="hero-description">Your screen, your voice, your pace.<br>Take a break. Pick up where you left off.<br>Save it all as one seamless video.</p>
-        <a class="button" href="https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.2/ResumeRec-0.2.8-beta.2-arm64.dmg"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>Download for Mac</a>
-        <p class="download-meta">Free public beta · v0.2.8-beta.2<br>Apple Silicon · macOS 26 or later</p>
+        <a class="button" href="{{DOWNLOAD_URL}}"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>Download for Mac</a>
+        <p class="download-meta">{{RELEASE_LABEL}}<br>Apple Silicon · macOS 26 or later</p>
         <a class="text-link launch-link" href="#first-launch">First time installing? Read this first <span aria-hidden="true">↗</span></a>
       </div>
       <figure class="app-preview">
@@ -80,15 +80,15 @@
       <div class="container section">
         <div class="install-heading"><div><p class="eyebrow">FROM DOWNLOAD TO RECORDING</p><h2 id="install-title">Make yourself at home.</h2></div><p>Apple Silicon (M1 or newer)<br>macOS 26 or later</p></div>
         <ol class="install-steps">
-          <li><span class="step-number" aria-hidden="true">01</span><h3>Download &amp; drag.</h3><p>Open the <a href="https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.2/ResumeRec-0.2.8-beta.2-arm64.dmg">DMG installer</a> and drag ResumeRec into Applications. Then eject the disk.</p></li>
+          <li><span class="step-number" aria-hidden="true">01</span><h3>Download &amp; drag.</h3><p>Open the <a href="{{DOWNLOAD_URL}}">DMG installer</a> and drag ResumeRec into Applications. Then eject the disk.</p></li>
           <li><span class="step-number" aria-hidden="true">02</span><h3>Make it yours.</h3><p>Open the app and find RR in your menu bar. In Settings, choose your output folder, capture source and audio.</p></li>
           <li><span class="step-number" aria-hidden="true">03</span><h3>Press record.</h3><p>Allow the macOS permissions you need. Start recording, pause whenever you like, then choose Stop &amp; Save.</p></li>
         </ol>
         <aside class="first-launch" id="first-launch" aria-labelledby="first-launch-title">
-          <h3 id="first-launch-title">A quick note about this beta</h3>
-          <p>ResumeRec is free and open source. This beta is ad hoc signed and <strong>not notarized by Apple</strong>, so macOS may block its first launch.</p>
+          <h3 id="first-launch-title">A quick note before you install</h3>
+          <p>ResumeRec is free and open source. The current build is ad hoc signed and <strong>not notarized by Apple</strong>, so macOS may block its first launch.</p>
           <p>If you trust the download, try opening the app, then go to <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>, if available, and confirm. Managed Macs may restrict this option. <a href="https://support.apple.com/en-us/102445">Read Apple’s instructions <span aria-hidden="true">↗</span></a></p>
-          <div class="beta-links"><a href="https://github.com/lustri2002/ResumeRec#beta-limitations">Beta limitations</a><a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.2">Release notes &amp; checksum</a><a href="https://github.com/lustri2002/ResumeRec#build-from-source">Build from source</a></div>
+          <div class="beta-links"><a href="https://github.com/lustri2002/ResumeRec#beta-limitations">Known limitations</a><a href="{{RELEASE_URL}}">Release notes &amp; checksum</a><a href="https://github.com/lustri2002/ResumeRec#build-from-source">Build from source</a></div>
         </aside>
       </div>
     </section>
@@ -97,7 +97,7 @@
       <img src="images/app-icon.png" width="64" height="64" alt="" loading="lazy">
       <h2 id="closing-title">Ready when you are.</h2>
       <p>A small app for the things you want to show.</p>
-      <a class="button" href="https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.2/ResumeRec-0.2.8-beta.2-arm64.dmg">Download ResumeRec <span aria-hidden="true">↓</span></a>
+      <a class="button" href="{{DOWNLOAD_URL}}">Download ResumeRec <span aria-hidden="true">↓</span></a>
       <p class="closing-meta">Free. Open source. Yours to keep.</p>
     </section>
   </main>
