@@ -1,29 +1,80 @@
 <p align="center">
-  <img src="Resources/Brand/AppIcon-source.png" width="128" alt="ResumeRec icon">
+  <img src="Resources/Brand/AppIcon-source.png" width="112" alt="ResumeRec app icon">
 </p>
 
-# ResumeRec
+<h1 align="center">ResumeRec</h1>
 
-**A simple macOS screen recorder. Pause, resume, and keep going.**
+<p align="center">
+  <strong>Record. Pause. Resume.</strong><br>
+  A simple screen recorder that lives in your Mac’s menu bar.
+</p>
 
-Record your screen with an optional webcam overlay, system audio and microphone. ResumeRec lives in the menu bar, saves MP4 files directly to your chosen folder, and removes paused time from the final video. No account, editor, tracking or subscription.
+<p align="center">
+  <a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.1"><img src="https://img.shields.io/badge/release-0.2.8--beta.1-2563eb" alt="Release 0.2.8-beta.1"></a>
+  <img src="https://img.shields.io/badge/macOS-26%2B-555555" alt="Requires macOS 26 or later">
+  <img src="https://img.shields.io/badge/chip-Apple%20Silicon-555555" alt="Apple Silicon only">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-16a34a" alt="MIT license"></a>
+</p>
 
-**Requirements:** Apple Silicon (M1 or newer), macOS 26 or later. The current release is a beta.
+<p align="center">
+  <a href="https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.1/ResumeRec-0.2.8-beta.1-arm64.dmg"><strong>Download for Mac ↓</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/lustri2002/ResumeRec/releases/tag/v0.2.8-beta.1">Release notes</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/lustri2002/ResumeRec/issues">Report a bug</a>
+</p>
 
-## Download and install
+---
 
-1. Open [Releases](https://github.com/lustri2002/ResumeRec/releases) and download the `.dmg` from the newest beta.
+Capture a display, a window or a region, with an optional webcam overlay, system audio and microphone. Pause when you need a break, resume when you’re ready, and save a single MP4 with the paused time removed.
+
+**Free and open source. No account, tracking or subscription. Your recordings stay on your Mac.**
+
+<p align="center">
+  <img src="docs/images/recording-settings.png" width="440" alt="ResumeRec settings showing display, window and region capture, cursor visibility, system audio, microphone input and the Start Recording button.">
+</p>
+<p align="center"><sub>Recording settings · Native macOS interface</sub></p>
+
+## What you can do
+
+| Feature | How it works |
+| :--- | :--- |
+| **Capture your screen** | Record a display, window or selected region, one monitor at a time. |
+| **Pause and pick up where you left off** | Remove pauses from both video and audio. Change capture sources while paused. |
+| **Put yourself in the picture** | Add a webcam overlay with a draggable desktop preview, eight preset positions, three shapes, a white border and mirroring. |
+| **Choose your audio** | Enable system audio and microphone independently, and choose your input device. |
+| **Set your recording quality** | Choose H.264 or HEVC, resolution, frame rate and capture bitrate. |
+| **Keep the workflow simple** | Use a countdown, configurable shortcuts and saved preferences. Save timestamped MP4 files to your chosen folder. |
+
+The webcam preview and its inclusion in the saved video are independent. Source and device lists refresh when you open their dropdowns.
+
+## Install
+
+**Requires an Apple Silicon Mac (M1 or newer) running macOS 26 or later.** The current release is a public beta.
+
+1. [Download ResumeRec 0.2.8-beta.1 for Mac](https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.1/ResumeRec-0.2.8-beta.1-arm64.dmg).
 2. Open the DMG and drag **ResumeRec** onto **Applications**.
 3. Eject the DMG and open ResumeRec from Applications.
 4. Look for the **RR** icon in the menu bar and open **Settings**.
 
-### First launch: macOS security
+### First launch
 
 The free beta is **ad hoc signed and not notarized by Apple**. macOS may block its first launch after download. If you trust this copy, try opening the app, then go to **System Settings → Privacy & Security → Open Anyway**, if available, and confirm the opening. Managed Macs may restrict this option. See [Apple's instructions](https://support.apple.com/en-us/102445).
 
 You can also build the app from source. No paid Apple Developer membership is needed for this project's local ad hoc build.
 
-Release downloads include a `.sha256` file. In the folder containing both downloads, run `shasum -a 256 -c ResumeRec-0.2.8-beta.1-arm64.dmg.sha256` to check the DMG's integrity. A checksum is not a developer identity certificate.
+<details>
+<summary>Verify your download (SHA-256)</summary>
+
+Download the [checksum file](https://github.com/lustri2002/ResumeRec/releases/download/v0.2.8-beta.1/ResumeRec-0.2.8-beta.1-arm64.dmg.sha256) into the same folder as the DMG. Open Terminal in that folder and run:
+
+```sh
+shasum -a 256 -c ResumeRec-0.2.8-beta.1-arm64.dmg.sha256
+```
+
+The result should end in `OK`. A checksum checks file integrity; it is not a developer identity certificate.
+
+</details>
 
 ## Start recording
 
@@ -33,21 +84,6 @@ Release downloads include a `.sha256` file. In the folder containing both downlo
 4. Click **Start Recording**. Use the menu bar or configurable shortcuts to **Pause**, **Resume** and **Stop & Save**.
 
 Allow screen recording, camera and microphone access when macOS asks. If screen access is unavailable, follow the instructions in Settings; quit and reopen ResumeRec if macOS requests it. Granting permission does not automatically start a recording.
-
-## Features
-
-- Display, window or region capture, one monitor at a time.
-- Pause and resume with the paused time removed from video and audio.
-- Optional webcam in the saved video, independent of the local preview.
-- Life-size webcam preview on your desktop, with free dragging and eight preset positions.
-- Circle, square and rounded rectangle shapes, white border and mirroring.
-- Independent system audio and microphone, with device selection.
-- Source and device lists refresh automatically when their dropdown opens.
-- Source changes while paused, preserving the recording's original video dimensions.
-- Optional countdown, keyboard shortcuts and automatically saved settings.
-- H.264 or HEVC, configurable resolution, frame rate and capture bitrate.
-- Timestamped MP4 files, plus manual recovery of completed temporary segments.
-- Compact English settings interface; offline operation with no telemetry.
 
 ## Build from source
 
@@ -71,7 +107,8 @@ See [Development](DEVELOPMENT.md) for testing, architecture, build options and p
 
 ## Beta limitations
 
-- Apple Silicon only; one monitor at a time.
+- Apple Silicon only; one monitor at a time. The interface is in English.
+- Changing capture sources while paused preserves the recording’s original video dimensions.
 - Saving joins segments, re-encodes video and mixes audio. It needs time and additional free disk space. Final export uses the selected codec's highest-quality preset; capture bitrate is not a strict final-file bitrate limit.
 - System audio follows the selected ScreenCaptureKit source. There is no separate per-app audio selector.
 - A closed or relaunched source window must be selected again.
@@ -87,7 +124,12 @@ ResumeRec does not upload recordings, collect analytics or contact an online ser
 
 Report bugs or suggest features in [Issues](https://github.com/lustri2002/ResumeRec/issues). Include your app/macOS versions, Mac chip, recording settings and reproduction steps. Do not attach private recordings unless you intentionally want to share them publicly.
 
-See [Contributing](CONTRIBUTING.md) and [release notes](CHANGELOG.md).
+| Resource | What you’ll find |
+| :--- | :--- |
+| [Issues](https://github.com/lustri2002/ResumeRec/issues) | Bug reports and feature requests. |
+| [Contributing](CONTRIBUTING.md) | How to propose and submit changes. |
+| [Development](DEVELOPMENT.md) | Architecture, tests, build options and packaging. |
+| [Changelog](CHANGELOG.md) | Changes included in each release. |
 
 ## License
 
