@@ -8,6 +8,7 @@ struct SettingsView: View {
     // Explicit wrapper avoids the SDK 27 State macro when building with Command Line Tools.
     private typealias PageState = SwiftUI.State<Page>
     @PageState private var selectedPage: Page = .recording
+    @FocusState private var focusedPage: Page?
 
     private enum Page: String, CaseIterable {
         case recording = "Recording", webcam = "Webcam", output = "Output", controls = "Controls"
@@ -71,7 +72,10 @@ struct SettingsView: View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
                 ForEach(Page.allCases, id: \.self) { page in
-                    Button { selectedPage = page } label: {
+                    Button {
+                        selectedPage = page
+                        focusedPage = page
+                    } label: {
                         VStack(spacing: 0) {
                             HStack(spacing: 5) {
                                 Image(systemName: page.symbol).font(.system(size: 12))
@@ -86,6 +90,8 @@ struct SettingsView: View {
                         .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .focused($focusedPage, equals: page)
+                    .focusEffectDisabled()
                     .accessibilityLabel(page.rawValue)
                     .accessibilityValue(selectedPage == page ? "Selected" : "")
                 }
