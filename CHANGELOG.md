@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.8-beta.2
+
+- Removed the rectangular focus border from the settings tabs; the active tab keeps its blue underline.
+- Keyboard focus follows the activated tab, with keyboard navigation preserved.
+- App build number: 11.
+
 ## 0.2.8-beta.1
 
 First public preview of ResumeRec for Apple Silicon and macOS 26+.
